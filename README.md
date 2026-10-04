@@ -1,2 +1,16 @@
 # QuantumQM2000
-Quantum QM2000 files and software
+The Quantum QM2000 computer was a computer from the 1980's, produced by Quantum Computers and based on the Nascom-80 bus using boards from Gemini Microcomputers. Information on these is available from <https://nascom.wordpress.com/gemini/>
+
+The disassembly and analysis was completed using the assistance of Claude-Code in VS-Code. 
+
+## Sources
+
+The hardware information for the boards is availabe from the following sources:
+
+| Board | Information page |
+|-------|------------------|
+| GM812 IVC | <https://nascom.wordpress.com/gemini/hardware/g812-ivc/> |
+| GM813 Z80 CPU and 64K RAM | <https://nascom.wordpress.com/gemini/hardware/g812-ivc/> |
+
+
+
