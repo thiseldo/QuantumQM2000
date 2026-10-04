@@ -1,6 +1,6 @@
 ;
 ; Quantum QM2000 monitor ROM V2.1 (QM-MON-V21)
-; Disassembled from QM-MON-V21-ORIGINAL.HEX/.BIN. ROM is mapped at F000h.
+; Disassembled from Originals/QM-MON-V21.HEX/.BIN. ROM is mapped at F000h.
 ; Assemble with e.g.:  z80asm -o QM-MON-V21.bin QM-Mon-V21.asm
 ;
 ; Monitor commands (prompt is '>'; single letter, then hex arguments

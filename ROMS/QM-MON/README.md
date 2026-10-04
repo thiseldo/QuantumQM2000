@@ -10,8 +10,8 @@ binary that is **byte-for-byte identical** to the original image.
 
 | File | Description |
 |------|-------------|
-| `QM-MON-V21-ORIGINAL.HEX` | Original ROM image, Intel HEX (2 KB, record addresses start at 0000h) |
-| `QM-MON-V21-ORIGINAL.BIN` | The same image as raw binary (2048 bytes) |
+| `../Originals/QM-MON-V21.HEX` | Original ROM image, Intel HEX (2 KB, record addresses start at 0000h) |
+| `../Originals/QM-MON-V21.BIN` | The same image as raw binary (2048 bytes) |
 | `QM-Mon-V21.asm` | Disassembled, re-assemblable Z80 source |
 
 ## Assembling
@@ -30,7 +30,7 @@ make
 z80asm -o QM-MON-V21.bin QM-Mon-V21.asm
 
 # verify against the original image (prints nothing and returns 0 if identical)
-cmp QM-MON-V21.bin QM-MON-V21-ORIGINAL.BIN
+cmp QM-MON-V21.bin ../Originals/QM-MON-V21.BIN
 ```
 
 The source starts with `org 0f000h` and ends with `defs 0f800h-$,0ffh`,
@@ -40,7 +40,7 @@ so the output is always exactly 2048 bytes, padded with FFh like the original.
 
 1. **Convert HEX to binary.** The Intel HEX file contains 2 KB of data from
    address 0000h plus an extended-address record; it was converted to
-   `QM-MON-V21-ORIGINAL.BIN`.
+   `../Originals/QM-MON-V21.BIN`.
 2. **Find the load address.** The image begins with a table of `jp` instructions
    (`C3 2E F0`, `C3 E5 F3`, ...), all targeting F0xx-F3xx. The ROM therefore
    runs at **F000h** and the disassembly uses `-g 0xF000`.
