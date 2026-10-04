@@ -3,6 +3,8 @@ The Quantum QM2000 computer was a computer from the 1980's, produced by Quantum 
 
 The disassembly and analysis was completed using the assistance of Claude-Code in VS-Code. 
 
+Updates on the restoration and operation of the QM2000 are described at <https://thiseldo.co.uk/>
+
 ## Sources
 
 The hardware information for the boards is availabe from the following sources:
